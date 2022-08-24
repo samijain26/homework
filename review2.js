@@ -64,6 +64,10 @@ console.log("Wild life answered")
 const ninja = ["donatello","Leonardo","Rapheal","Michaelangelo"]
 for( let item of ninja){
     
-    
+
     console.log(item.toUpperCase())
 }
+
+///////////////////////////Methods revisited answered/////////////
+
+const favMovies =["Jaws","The Felloship of the Ring","Howl's Moving Castle","Dijango uncle"]
