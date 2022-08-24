@@ -2,7 +2,7 @@
 ////////////////Easy Going//////////////////////////////
 
 for (let i =1 ; i <= 20 ;  i ++){
-    console.log("Easy Going answered  " + i)
+    console.log( i)
 
 }
 
