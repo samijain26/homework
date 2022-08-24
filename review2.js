@@ -11,7 +11,7 @@ for (let i =1 ; i <= 20 ;  i ++){
 
 for (let i = 0 ; i <= 200 ; i++){
     if( i % 2 === 0){
-        console.log("Get Even Answered  " + i)
+        console.log( i)
     }
 }
 
@@ -36,7 +36,7 @@ function fizzBuzz(start,finish) {
 }
     
 fizzBuzz(1,100);
-console.log("Fizz Buzz Answered")
+
 
 //////////////////////////////////////WIld Wild Life/////////////
 
@@ -57,7 +57,7 @@ wolfy.shift()          //deleting wolfy name beginning of array
 wolfy.unshift("Gameboy")     //adding a new name to wolfy beginning of array
 
 
-console.log("Wild life answered")
+
 
 //////////////////////////////////////////Yell at Ninja Turtle///////////
 
