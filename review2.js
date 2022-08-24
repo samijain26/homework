@@ -71,3 +71,12 @@ for( let item of ninja){
 ///////////////////////////Methods revisited answered/////////////
 
 const favMovies =["Jaws","The Felloship of the Ring","Howl's Moving Castle","Dijango uncle"]
+ 
+console.log(favMovies.indexOf("Titanic"))  //finding index of titanic
+ 
+console.log(favMovies.sort())  //this method sort the array and mutate it and return reference to the same array
+
+
+
+console.log(favMovies)
+
