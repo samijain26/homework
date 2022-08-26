@@ -103,7 +103,7 @@ favMovies.splice(favMovies.indexOf("Django Unchained"),1,"Avtar")  /*first find 
 // "Avtar" in its place. */
  console.log("used splice to replace Django unchained with Avtar :",favMovies)
 
-let midArray = favMovies.length/2
+let midArray = Math.floor(favMovies.length/2)
 console.log("length is : ", + midArray)
 let sliceArr = favMovies.slice( midArray)  //slice  for middle of array
 console.log("I am the sliced arry in the middle", sliceArr)
@@ -140,21 +140,45 @@ console.log("I am the sliced arry in the middle", sliceArr)
  //////////////////////////////////Excited Kitten//////////////////////////////////
 
  let Msg = "Love me,pet me!Hssssss me !"
- for (let i = 0 ;i <= 20; i++){
-    console.log(Msg)
+ for (let i = 1 ;i <= 20; i++){
     const msgArr = [".. human.. Why are you takin pictures of me?","...the catnip made me do it",
         "... why does the red dot always get away..."]
 
     if (i % 2 === 0){
+        //console.log(Math.floor(Math.random()* msgArr.length))
         console.log(msgArr[Math.floor(Math.random()* msgArr.length)])
+     }else{
+        console.log(Msg)
      }
+    
+    
+    
+
     }
 
 
     //////////////////////////////////FIND THE Median////////////////////////////////
 
-    
+    const num = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12]
 
+      //sortting the array to arrange number in increasing order
+      console.log("sorted array is : " , num.sort())
+
+      arrLength = num.length //finding array length
+      console.log("Array lenght is : "+ arrLength)
+      //if arry length is a even number then medeian is sum of 12th and 13th element in array
+      //else median is 13th element in arry
+     if (arrLength % 2 == 0){
+        
+       
+        median = (num[(arrLength/2)] +num[(arrLength/2)+1])/2
+        
+     }else{
+      
+       median = num[Math.ceil(arrLength/2)]
+      
+     }
+     console.log("The median is : " + median)
 
 
 
