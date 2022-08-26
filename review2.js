@@ -1,72 +1,72 @@
 
 ////////////////Easy Going//////////////////////////////
 
-// for (let i =1 ; i <= 20 ;  i ++){
-//     console.log( i)
+for (let i =1 ; i <= 20 ;  i ++){
+    console.log( i)
 
-// }
+}
 
 
 //////////////////////////Get Even  //////////////////
 
-// for (let i = 0 ; i <= 200 ; i++){
-//     if( i % 2 === 0){
-//         console.log( i)
-//     }
-// }
+for (let i = 0 ; i <= 200 ; i++){
+    if( i % 2 === 0){
+        console.log( i)
+    }
+}
 
-////////////////////////////////Fizz Buzz///////////////////
+//////////////////////////////Fizz Buzz///////////////////
 
-// function fizzBuzz(start,finish) {
-//     for(let i = start ; i <=finish ; i ++){
+function fizzBuzz(start,finish) {
+    for(let i = start ; i <=finish ; i ++){
     
 
-//          if (i % 3 === 0 && i % 5 === 0) {
-//             console.log(" FizzBuzz");
-//          }else if (i % 3  === 0) {
-//               console.log(" Fizz");
-//          } else if (i % 5 === 0) {
-//               console.log(" Buzz");
-//          }else {
-//               console.log(i);
+         if (i % 3 === 0 && i % 5 === 0) {
+            console.log(" FizzBuzz");
+         }else if (i % 3  === 0) {
+              console.log(" Fizz");
+         } else if (i % 5 === 0) {
+              console.log(" Buzz");
+         }else {
+              console.log(i);
         
-//         }
-//     }
+        }
+    }
     
-// }
+}
     
-// fizzBuzz(1,100);
+fizzBuzz(1,100);
 
 
 //////////////////////////////////////WIld Wild Life/////////////
 
-// const wolfy = [ "Wolfy" , "wolf" ,16,"Yukon Territory"]
-// const sharky = ["Sharky","shark",20,"left Coast"]
-// const plantee = [ "Plantee","plant",5000,"Mordor"]
-// const porgee = ["Porgee", "Porg", 186,"Ahch-To"]
-// const dart = ["D'Art","Demogorgan Dog",2,"Upside Down"]
+const wolfy = [ "Wolfy" , "wolf" ,16,"Yukon Territory"]
+const sharky = ["Sharky","shark",20,"left Coast"]
+const plantee = [ "Plantee","plant",5000,"Mordor"]
+const porgee = ["Porgee", "Porg", 186,"Ahch-To"]
+const dart = ["D'Art","Demogorgan Dog",2,"Upside Down"]
 
-// plantee[2]++     //making plantee 1 more year older
+plantee[2]++     //making plantee 1 more year older
 
-// wolfy[3] = "Gotham City"   //changing wolfy home town
+wolfy[3] = "Gotham City"   //changing wolfy home town
 
-// dart.push("Hawkins")      //adding a second home
+dart.push("Hawkins")      //adding a second home
 
-// wolfy.shift()          //deleting wolfy name beginning of array
+wolfy.shift()          //deleting wolfy name beginning of array
 
-// wolfy.unshift("Gameboy")     //adding a new name to wolfy beginning of array
+wolfy.unshift("Gameboy")     //adding a new name to wolfy beginning of array
 
 
 
 
 //////////////////////////////////////////Yell at Ninja Turtle///////////
 
-// const ninja = ["donatello","Leonardo","Rapheal","Michaelangelo"]
-// for( let item of ninja){
+const ninja = ["donatello","Leonardo","Rapheal","Michaelangelo"]
+for( let item of ninja){
     
 
-//     console.log(item.toUpperCase())
-// }
+    console.log(item.toUpperCase())
+}
 
 ///////////////////////////Methods revisited answered/////////////////////////
 
@@ -183,5 +183,50 @@ console.log("I am the sliced arry in the middle", sliceArr)
 
 
 
-// ////////////////////////////////////
+// ////////////////////////////////////Return of the closet//////////////////////////
 
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right socks",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hats",
+  "marshmallow peeps",
+];
+const thomsCloset = [
+  [
+    "grey button-up",
+    "dark gery button-up",
+    "light blut button-up",
+    "blue button-up",
+  ],
+  ["grey jeans", "jeans", "PJs"],
+  ["wool mittens", "wool scarf", "raybans"],
+];
+
+  let kristynsShoe = kristynsCloset.shift()  //delete left show from Kristyn closet
+  
+
+  thomsCloset[2].push(kristynsShoe) //push Kristyn show in thomas accessory closet
+  console.log(thomsCloset[2])
+
+  console.log("Kristyn is wearing ",kristynsCloset[3]+ " and",kristynsCloset[4]+" with",kristynsCloset[5])
+  console.log("Kristyn is wearing ",kristynsCloset[2]+ " and",kristynsCloset[5]+" with",kristynsCloset[1])
+  console.log("Kristyn is wearing ",kristynsCloset[0]+ " and",kristynsCloset[3]+" with",kristynsCloset[4])
+
+  console.log("Thomas is wearing ",thomsCloset[2][1]+ " and",thomsCloset[1][0]+" with", thomsCloset[2][2])
+  console.log("Thomas is wearing ",thomsCloset[0][2]+ " and",thomsCloset[1][2]+" with",thomsCloset[2][1])
+  console.log("Thomas is wearing ",thomsCloset[1][2]+ " and",thomsCloset[2][3]+" with",thomsCloset[0][1])
+
+  //////////////////////////////////////Dirty laundry//////////////////////////////////////////////
+
+  for( let i=0 ;i < kristynsCloset.length ; i ++){
+    console.log("WHIRR now washing" ,kristynsCloset[i])
+  }
+
+  for(let i = 0 ; i < thomsCloset.length ; i ++){
+    console.log("{" ,thomsCloset[i], "}")
+  }
+
+  //////////////////////////////////////////////
