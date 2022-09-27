@@ -7,7 +7,8 @@ const port = 3000;
 //declaring expree as a function
 const app = express();
 
-
+//console.log(__dirname)
+//console.log(__filename)
 //respondinding the request for 99 soda bottles
 app.get("/", (req, res) => {
   res.send(
