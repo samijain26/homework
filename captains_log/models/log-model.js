@@ -10,9 +10,10 @@ const logSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    
     broken: {
       type: Boolean,
-      default: true,
+      
     },
   },
   {

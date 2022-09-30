@@ -1,4 +1,5 @@
 const logModel = require('../models/log-model')
+const logSeed = require('../models/logSeed')
 
 // @desc get all logs
 // @router GET /logs
@@ -43,6 +44,8 @@ const createNew = (req, res) => {
 }
 //get a single log and delete
 const singleLog = (req, res) => {
+  
+  
     logModel.findById(req.params.id, (error,foundLog) =>{
         if (error) {
             res.status(400).json({ error })
@@ -81,18 +84,53 @@ const editForm = (req ,res) => {
 }
 
 const updateLog = (req ,res) => {
+  if (req.body.broken === 'on') {
+    req.body.broken = true
+  } else {
+    req.body.broken = false
+  }
   logModel.findByIdAndUpdate(req.params.id,req.body,(error,foundLog) =>{
       if (error) {
           res.status(400).json({ error })
         } else {
           res.status(200)
-          res.redirect('/logs')
+          res.redirect(`/logs/${req.params.id}`)
         }
 
   })
 }
-   
+const seedStarterData = (req, res) => {
+  // Delete all remaining documents (if there are any)
+  logModel.deleteMany({}, (error, deletedLogs) => {
+      if (error) {
+          res.status(400).json(error)
+      } else {
+          //console.log('deleted data.')
+          
+          // Data has been successfully deleted
+          // Now use seed data to repopulate the database
+          logModel.create(logSeed, (err, createdLogs) => {
+            console.log(logSeed)
+              if (error) {
+                  res.status(400).json(error)
+              } else {
+                  res.status(200).redirect('/logs')
+              }
+          })
+      }
+  })
+}
 
+const clearStarterData = (req, res) => {
+  // Delete all remaining documents (if there are any)
+  logModel.deleteMany({}, (error, deletedLogs) => {
+      if (error) {
+          res.status(400).json(error)
+      } else {
+        res.status(200).redirect('/logs')
+              }
+            })
+  }
 
 
 module.exports = {
@@ -103,5 +141,7 @@ module.exports = {
   deleteLog,
   editForm ,
   updateLog,
+  seedStarterData,
+  clearStarterData
  
 }
