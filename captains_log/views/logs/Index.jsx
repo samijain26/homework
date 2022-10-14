@@ -31,10 +31,10 @@ class Index extends React.Component {
                     {broken ? 'Yes' : 'No'}
                   </li>
                   <li>
-                  <span className="bold">TimeCreated: </span>{String(createdAt)}
+                  <span className="bold">DateCreated: </span>{createdAt.toDateString()}
                   </li>
                   <li>
-                  <span className="bold">TimeUpdated: </span>{String(updatedAt)}
+                  <span className="bold">DateUpdated: </span>{String(updatedAt.toDateString())}
                   </li>
                 </a>
               )

@@ -1,0 +1,133 @@
+*{
+  margin:0;
+  padding: 4px 4px;
+  color: black;
+  box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+.item1 { grid-area: sidebar; }
+.item2 { grid-area: review; }
+.item3 { grid-area: avgrating; }
+.item4 { grid-area: sentiment; }
+.item5 { grid-area: website; }
+
+.App{
+  display: grid;
+  grid-template-areas: 'sidebar review avgrating sentiment'
+                        'sidebar website website website'
+                        
+                        ;
+    overflow: hidden;                     
+  grid-gap: 8px;
+  background-color: #eee;
+ padding:85px 40px ;
+
+ height: 100vh;
+ width: 900px;
+ 
+
+}
+ 
+
+.sidebar{
+  grid-area: sidebar;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  padding: 20px;
+  /* opacity: .4; */
+ 
+ 
+  /* border: 2px solid black; */
+  width: 200px;
+  height:600px;
+  
+  background-color: darkgrey;
+  z-index: 2;
+ 
+}
+.review{
+  display: flex;
+  grid-area: review;
+  justify-content:flex-start;
+  flex-direction: column;
+  align-items:flex-start;
+  /* opacity: .4; */
+  background-color: darkgrey;
+  /* border: 2px solid black; */
+  width: 200px;
+  height: 300px;
+ 
+ 
+  /* background-color: gray; */
+ 
+}
+.avgrating{
+  display: flex;
+  grid-area: avgrating;
+  justify-content:flex-start;
+  flex-direction: column;
+  align-items:flex-start;
+  /* opacity: .4; */
+  background-color: darkgrey;
+  /* border: 2px solid black; */
+  width: 200px;
+  height: 300px;
+ 
+  /* background-color: gray; */
+ 
+}
+.website{
+  display: flex;
+  grid-area: website;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* opacity: .4; */
+  background-color: darkgrey;
+  /* border: 2px solid black; */
+  width: 615px;
+  height:290px;
+  padding-left: 50px; 
+  
+  /* background-color: gray; */
+ 
+}
+/* .website:last-child(){
+  padding-left: 50px; 
+} */
+.sentiment{
+  display: flex;
+  grid-area: sentiment;
+  justify-content:flex-start;
+  flex-direction: column;
+text-align: center;
+  /* opacity: .4; */
+ 
+  /* border: 2px solid black; */
+  width: 200px;
+  height: 300px;
+  background-color: darkgrey;
+  /* opacity: .4; */
+  /* background-color: gray; */
+ 
+}
+.empty{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:130px;
+ width:500px;
+  /* padding-bottom: 10px; */
+    
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
+  border: 1px solid black;
+  background-color:grey;
+  opacity: 1;
+  
+}

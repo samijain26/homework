@@ -8,7 +8,7 @@ class Edit extends React.Component {
     return (
       <Layout title='Edit log' group ="logs">
         <div className="wrapper">
-          <h1>CEdit a  Log</h1>
+          <h1>Edit a  Log</h1>
           <form action={`/logs/${_id}?_method=PUT`} method="POST">
             <div className="form-control">
               <label htmlFor="title">Title:</label>

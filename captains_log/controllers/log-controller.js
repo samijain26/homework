@@ -45,7 +45,6 @@ const createNew = (req, res) => {
 //get a single log and delete
 const singleLog = (req, res) => {
   
-  
     logModel.findById(req.params.id, (error,foundLog) =>{
         if (error) {
             res.status(400).json({ error })
