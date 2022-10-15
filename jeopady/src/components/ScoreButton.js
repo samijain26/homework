@@ -11,7 +11,7 @@ const ScoreButtons = ({ onScoreIncrement ,onScoreDecrement,onScoreReset}) => {
         justify-content: space-between;
         margin-bottom: 2rem;
         button {
-          background: inherit;
+          background: cyan;
           border: 1px solid var(--color-dark);
           padding: 0.5rem;
           width: 100%;

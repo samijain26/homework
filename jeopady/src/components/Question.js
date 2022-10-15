@@ -38,10 +38,14 @@ const Question = ({ question }) => {
         p {
           color: var(--color-grey-dark);
         }
+        h2 {
+          color:red
+        }
       `}
     >
       <button onClick={handleShowQuestion}>Reveal Question</button>
-      <p className={active ? 'hidden' : ''}>{question[0]?.answer}</p>
+      <p className={active ? 'hidden' : ''}>{question[0]?.answer}<br></br>
+      <h2>Click back to hide Question before  play again</h2></p>
     </div>
   )
 }

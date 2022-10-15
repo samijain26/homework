@@ -93,7 +93,7 @@ body{
   /* border: 2px solid black; */
   width: 615px;
   height:325px;
-  padding-left: 50px; 
+  /* padding-left: 50px;  */
   
   /* background-color: gray; */
  
@@ -119,8 +119,8 @@ text-align: center;
 }
 .empty{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-self: center;
   height:190px;
  width:500px;
  
