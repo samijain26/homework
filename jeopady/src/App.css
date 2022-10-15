@@ -1,3 +1,4 @@
+/* Font Weights: 200, 400, 700 */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
 
 :root {
@@ -9,6 +10,7 @@
   --color-grey-dark: #424650;
   --border-radius: 4px;
   --max-width: 500px;
+  --max-width-large: 700px;
   --transition: all 0.2s ease-in-out;
 }
 
@@ -25,6 +27,3 @@ body {
   background-color: var(--color-light);
   font-size: 16px;
 }
-
-
-

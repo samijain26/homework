@@ -1,6 +1,7 @@
 //import logo from './logo.svg';
 
 /** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react"
 import { useEffect, useState } from 'react'
 import { Button, Header, Info, ScoreWrap } from './components/Import'
 
@@ -22,8 +23,16 @@ function App() {
 // },[])
 
   return (
-    <div>
-      <Header text="Jeopady" />
+    <div css={css`
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    @media screen and (min-width: 768px) {
+      max-width: var(--max-width-large);
+    }
+  `}
+    >
+      <Header text="Jeopardy" />
       <ScoreWrap  value={questionData}/>
       <Button onGetQuestion={getQuestionHandler}>Play</Button>
       <Info data={questionData}/>
