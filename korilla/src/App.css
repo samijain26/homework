@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+    gap: 5px;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+div .top
+{    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.verticle{
+    display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        border: 2px solid maroon;
+}
